@@ -28,28 +28,10 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.logo_img{
-  width: 50vw;
-  height: 100vh;
-}
-
 .bg_login_btn{
   background-color: #0C4AC0;
 }
 
-.forgot_pass_btn{
-  justify-content: end;
-  justify-self: end;
-  text-align: end;
-  align-self: flex-end;
-  justify-items: end;
-}
+
+
+
