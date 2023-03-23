@@ -3,21 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
+import { BrowserRouter, Route, Routes,} from 'react-router-dom';
 import Login from './pages/Login'
-import Home from './pages/Home'
+import Dashboard from './pages/Dashboard';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path='/' element={<Login />} >
-      <Route path='/home' element={<Home />} />
-    </Route>
-  )
-)
+
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Login />}/>
+        <Route path='dashboard' element={<Dashboard />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

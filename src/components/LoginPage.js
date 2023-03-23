@@ -1,5 +1,5 @@
 import loginImg from '../assets/login_img.png'
-import loginIcon from '../assets/login_logo.png'
+import loginIcon from '../assets/pituchat_logo.png'
 import emailIcon from '../assets/mail_icon.png'
 import passwordIcon from '../assets/password_icon.png'
 
