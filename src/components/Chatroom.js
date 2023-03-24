@@ -6,7 +6,7 @@ export default function Chatroom() {
     return(
         <>
         <div className="fixed left-52 w-screen flex flex-row flex-auto h-full">
-            <div className="flex flex-col w-2/6 border-r-2">
+            <div className="flex flex-col w-[35rem] border-r-2">
                 <div className="h-32 p-4">
                     <div className="flex h-full justify-between">
                         <h2 className="font-bold text-2xl">Chat</h2>
@@ -21,10 +21,10 @@ export default function Chatroom() {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-row justify-evenly pb-3">
-                    <p className="font-semibold">Perlu balas</p>
-                    <p className="font-semibold">Terbalas</p>
-                    <p className="font-semibold">Semua chat</p>
+                <div className="flex flex-row justify-evenly pb-2">
+                    <p className="font-bold underline underline-offset-[1rem] z-40 decoration-blue-500 decoration-2">Perlu balas</p>
+                    <p className="font-semibold hover:underline hover:underline-offset-[1rem] decoration-blue-500 decoration-2 z-40">Terbalas</p>
+                    <p className="font-semibold hover:underline hover:underline-offset-[1rem] decoration-blue-500 decoration-2 z-40">Semua chat</p>
                 </div>
                 <div className="flex flex-row w-full border-b-2">
                     <div className="border-b-2 border-blue-400">
@@ -33,7 +33,7 @@ export default function Chatroom() {
                 </div>
 
                 <div className="w-full block align-middle">
-                    <div className='flex w-full justify-evenly border-b-2'>
+                    <div className='flex w-full justify-evenly border-b-2 hover:bg-gray-100'>
                         <div className="flex-row p-4 grid grid-cols-3 items-center px-5">
                             <img src={userChatPlaceholder} alt=''/>
                             <div className='space-y-2'>
@@ -44,9 +44,49 @@ export default function Chatroom() {
                                     <p className='text-xs'>Beauty Center</p>
                                 </div>
                             </div>
-                            <div className='flex-row flex justify-end'>
-                                <p className='block'>Today</p>
-                                <p className='block'>3</p>
+                            <div className='flex-col flex justify-self-end space-y-2'>
+                                <p className='text-xs'>Today</p>
+                                <div className='bg-blue-600 w-7 h-7 text-center rounded-full'>
+                                    <p className='text-white'>3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='flex w-full justify-evenly border-b-2 hover:bg-gray-100'>
+                        <div className="flex-row p-4 grid grid-cols-3 items-center px-5">
+                            <img src={userChatPlaceholder} alt=''/>
+                            <div className='space-y-2'>
+                                <p className='font-bold'>User Placeholder</p>
+                                <p className='flex-grow truncate text-sm'>lorem ipsum dolor sit amet asdasdasasdasdasdasdas</p>
+                                <div className='bg_tokopedia_small w-28 h-6 p-1 justify-center flex rounded-md space-x-2'>
+                                    <img src={tokopediaSmallIcon} alt='tokopedia'/>
+                                    <p className='text-xs'>Beauty Center</p>
+                                </div>
+                            </div>
+                            <div className='flex-col flex justify-self-end space-y-2'>
+                                <p className='text-xs'>Today</p>
+                                <div className='bg-blue-600 w-7 h-7 text-center rounded-full'>
+                                    <p className='text-white'>3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='flex w-full justify-evenly border-b-2 hover:bg-gray-100'>
+                        <div className="flex-row p-4 grid grid-cols-3 items-center px-5">
+                            <img src={userChatPlaceholder} alt=''/>
+                            <div className='space-y-2'>
+                                <p className='font-bold'>User Placeholder</p>
+                                <p className='flex-grow truncate text-sm'>lorem ipsum dolor sit amet asdasdasasdasdasdasdas</p>
+                                <div className='bg_tokopedia_small w-28 h-6 p-1 justify-center flex rounded-md space-x-2'>
+                                    <img src={tokopediaSmallIcon} alt='tokopedia'/>
+                                    <p className='text-xs'>Beauty Center</p>
+                                </div>
+                            </div>
+                            <div className='flex-col flex justify-self-end space-y-2'>
+                                <p className='text-xs'>Today</p>
+                                <div className='bg-blue-600 w-7 h-7 text-center rounded-full'>
+                                    <p className='text-white'>3</p>
+                                </div>
                             </div>
                         </div>
                     </div>
