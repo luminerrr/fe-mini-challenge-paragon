@@ -1,11 +1,11 @@
 import userChatPlaceholder from '../assets/chat_user_placeholder.png'
-import tokopediaSmallIcon from '../assets/tokopedia_small.png'
+import TokopediaSmall from './TokopediaSmall'
 
 export default function Chatroom() {
 
     return(
         <>
-        <div className="fixed left-52 w-screen flex flex-row flex-auto h-full">
+        <div className="fixed left-52 w-full flex flex-row flex-auto h-full">
             <div className="flex flex-col w-[35rem] border-r-2">
                 <div className="h-32 p-4">
                     <div className="flex h-full justify-between">
@@ -39,10 +39,7 @@ export default function Chatroom() {
                             <div className='space-y-2'>
                                 <p className='font-bold'>User Placeholder</p>
                                 <p className='flex-grow truncate text-sm'>lorem ipsum dolor sit amet asdasdasasdasdasdasdas</p>
-                                <div className='bg_tokopedia_small w-28 h-6 p-1 justify-center flex rounded-md space-x-2'>
-                                    <img src={tokopediaSmallIcon} alt='tokopedia'/>
-                                    <p className='text-xs'>Beauty Center</p>
-                                </div>
+                                <TokopediaSmall />
                             </div>
                             <div className='flex-col flex justify-self-end space-y-2'>
                                 <p className='text-xs'>Today</p>
@@ -58,10 +55,7 @@ export default function Chatroom() {
                             <div className='space-y-2'>
                                 <p className='font-bold'>User Placeholder</p>
                                 <p className='flex-grow truncate text-sm'>lorem ipsum dolor sit amet asdasdasasdasdasdasdas</p>
-                                <div className='bg_tokopedia_small w-28 h-6 p-1 justify-center flex rounded-md space-x-2'>
-                                    <img src={tokopediaSmallIcon} alt='tokopedia'/>
-                                    <p className='text-xs'>Beauty Center</p>
-                                </div>
+                                <TokopediaSmall />
                             </div>
                             <div className='flex-col flex justify-self-end space-y-2'>
                                 <p className='text-xs'>Today</p>
@@ -77,10 +71,7 @@ export default function Chatroom() {
                             <div className='space-y-2'>
                                 <p className='font-bold'>User Placeholder</p>
                                 <p className='flex-grow truncate text-sm'>lorem ipsum dolor sit amet asdasdasasdasdasdasdas</p>
-                                <div className='bg_tokopedia_small w-28 h-6 p-1 justify-center flex rounded-md space-x-2'>
-                                    <img src={tokopediaSmallIcon} alt='tokopedia'/>
-                                    <p className='text-xs'>Beauty Center</p>
-                                </div>
+                                <TokopediaSmall />
                             </div>
                             <div className='flex-col flex justify-self-end space-y-2'>
                                 <p className='text-xs'>Today</p>
@@ -91,8 +82,8 @@ export default function Chatroom() {
                         </div>
                     </div>
                 </div>
-                
             </div>
+
         </div>
         </>
     )
