@@ -10,9 +10,9 @@ export default function Chat({chatActive}){
   
 
   return(<>
-  <div className="fixed flex flex-row h-full left-[48rem]">
-    {chatActive ? <></> : <NoChat />}
-    <div className={`flex flex-col ${open ? "w-[49rem]" : "w-[69rem]"} h-full ${chatActive ? "" : "invinsible"}`}>
+  <div className="fixed flex flex-row h-full w-[69rem] left-[48rem]">
+    <NoChat chatActive={chatActive}/>
+    <div className={`flex flex-col ${open ? "w-[49rem]" : "w-full"} h-full ${chatActive ? "" : "hidden"}`}>
       <div className="flex flex-row bg-gray-100 h-20 items-center p-4 w-full justify-between border-b-2">
         <div className="flex flex-col">
           <p className="font-semibold">User Placeholder</p>
@@ -57,7 +57,7 @@ export default function Chat({chatActive}){
         </div>
     </div>
 
-    <div className={`flex flex-col p-4 w-[20rem]`}>
+    <div className={`flex flex-col p-4 w-[20rem] ${open ? "" : "hidden"}`}>
       <div className="flex flex-row justify-end">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 hover:cursor-pointer" onClick={()=>setOpen(false)}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
