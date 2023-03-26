@@ -33,6 +33,15 @@ export default function StoreList(){
                         </div>
                     </div>
 
+                    <div className="bg-white w-60 items-center p-4 rounded-lg flex space-y-6 justify-center">
+                        <div className='bg-white p-4 rounded-xl space-x-2 flex flex-row items-center border-2 border-blue-700 hover:bg-slate-100 hover:cursor-pointer'>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="blue" className="w-6 h-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                            <p className='text-blue-700 font-semibold'>Tambah Toko</p>
+                        </div>
+                    </div>
+
                     
                 </div>
             </div>
