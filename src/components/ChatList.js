@@ -38,15 +38,15 @@ export default function ChatList() {
                                     </li>
                                     <li className='flex space-x-4 border-b-2 w-64 justify-center pb-1'>
                                         <input type='checkbox' />
-                                        <p>Shopee - Beauty Lovers</p>
+                                        <p>Shopee - Makeupucino</p>
                                     </li>
                                     <li className='flex space-x-4 border-b-2 w-64 justify-center pb-1'>
                                         <input type='checkbox' />
-                                        <p>Shopee - Beauty Lovers</p>
+                                        <p>Tokopedia - Beauty Lovers</p>
                                     </li>
                                     <li className='flex space-x-4 border-b-2 w-64 justify-center pb-1'>
                                         <input type='checkbox' />
-                                        <p>Shopee - Beauty Lovers</p>
+                                        <p>Tokopedia - Makeupucino</p>
                                     </li>
                                     <li className='flex space-x-4 w-64 justify-start pb-1 pl-4 mt-1'>
                                         <p className='text-blue-500'>Pilih semua</p>
