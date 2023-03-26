@@ -7,9 +7,7 @@ import TokopediaSmall from "./TokopediaSmall";
 
 export default function Chat({chatActive}){
   const [open, setOpen] = useState(false)
-  // if(chatActive === false){
-  //   return <NoChat />
-  // }
+  
 
   return(<>
   <div className="fixed flex flex-row h-full left-[48rem]">
@@ -30,18 +28,19 @@ export default function Chat({chatActive}){
       </div>
 
       <div className="flex-auto overflow-y-auto p-5 space-y-4 bg-blue-100">
+
         <div className="flex flex-row space-x-2 items-center">
           <img src={userPlaceholder} alt="" className='h-9 w-9'/>
           <div className='flex flex-col space-y-2'>
             <p className="text-gray-600 text-xs">Name placeholder</p>
-            <p className='bg-white rounded p-3'>Lorem ipsum dolor</p>
+            <p className='bg-white rounded-full rounded-bl-none p-3'>Lorem ipsum dolor</p>
             <p className="text-gray-600 text-xs">Just now</p>
           </div>
         </div>
 
         <div className="flex space-x-2 flex-row-reverse space-x-reverse">
           <div className="flex flex-col">
-            <p className="bg-blue-500 rounded p-3 text-white">Some text lorem ipsum</p>
+            <p className="bg-blue-500 rounded-full rounded-br-none p-3 text-white">Some text lorem ipsum</p>
             <div className="flex flex-row justify-end text-gray-600 text-xs">
               <p>Sent ·</p>
               <p>Just now</p>
@@ -54,8 +53,7 @@ export default function Chat({chatActive}){
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mt-1">
             <path strokeLinecap="round" strokeLinejoin="round" d="M18.375 12.739l-7.693 7.693a4.5 4.5 0 01-6.364-6.364l10.94-10.94A3 3 0 1119.5 7.372L8.552 18.32m.009-.01l-.01.01m5.699-9.941l-7.81 7.81a1.5 1.5 0 002.112 2.13" />
           </svg>
-          <textarea className="rounded-full border-2 w-full h-8 " value="type a message"></textarea>
-
+          <input type="text" className="rounded-full border-2 w-full h-8 p-3" placeholder="Type a message here" />
         </div>
     </div>
 

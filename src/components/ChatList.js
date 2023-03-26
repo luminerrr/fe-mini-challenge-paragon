@@ -2,7 +2,7 @@ import { useState } from 'react'
 import userChatPlaceholder from '../assets/chat_user_placeholder.png'
 import Chat from './Chat'
 import TokopediaSmall from './TokopediaSmall'
-import NoChat from './NoChat'
+
 
 export default function ChatList() {
     const [dropdownToggle, setDropdownToggle] = useState(true)
