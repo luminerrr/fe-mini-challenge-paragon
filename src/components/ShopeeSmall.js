@@ -1,0 +1,11 @@
+import shopeeSmallIcon from '../assets/shopee_small.png'
+
+export default function ShopeeSmall() {
+
+    return(
+    <div className='bg_shopee_small w-28 h-6 p-1 justify-center flex rounded-md space-x-2'>
+        <img src={shopeeSmallIcon} alt='tokopedia'/>
+        <p className='text-xs'>Beauty Center</p>
+    </div>
+    )
+}

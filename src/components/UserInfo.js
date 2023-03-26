@@ -31,7 +31,6 @@ export default function UserInfo(){
                     <p className='inline text-gray-800'>20 October 2022</p>
                 </div>
             </div>
-            
         </div>
     </>)
 }

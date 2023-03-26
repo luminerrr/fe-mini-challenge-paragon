@@ -1,18 +1,19 @@
-import Chat from "../components/Chat";
-import Chatroom from "../components/Chatroom";
+import { useState } from "react";
+import ChatList from "../components/ChatList";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
+import StoreList from "../components/StoreList";
 
 export default function Dashboard(){
+    const [selection, setSelection] = useState(true)
 
-    return(
-        <>
+    
+    return(<>
         <Navbar />
-        <Sidebar />
-       
-        <Chatroom />
-        <Chat />
+        <Sidebar selection={selection} setSelection={setSelection}/>
+        {selection ? <ChatList /> : <StoreList />}
+        
+    </>)
 
-        </>
-    )
+
 }

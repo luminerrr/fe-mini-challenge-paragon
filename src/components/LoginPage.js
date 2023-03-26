@@ -2,6 +2,7 @@ import loginImg from '../assets/login_img.png'
 import loginIcon from '../assets/pituchat_logo.png'
 import emailIcon from '../assets/mail_icon.png'
 import passwordIcon from '../assets/password_icon.png'
+import { Link } from 'react-router-dom'
 
 export default function LoginPage(){
     return(
@@ -29,8 +30,9 @@ export default function LoginPage(){
                     <div className='flex justify-end'>
                         <button className='block text-sm text-gray-400 forgot_pass_btn'>Lupa password?</button>
                     </div>
-
-                    <button className='bg_login_btn text-white w-full rounded-lg h-10 mt-8'>Masuk</button>
+                    <Link to='/dashboard'>
+                        <button className='bg_login_btn text-white w-full rounded-lg h-10 mt-8'>Masuk</button>
+                    </Link>
                 </form>
             </div>
         </div>
